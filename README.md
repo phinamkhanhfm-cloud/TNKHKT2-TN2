@@ -22,10 +22,3 @@
 - **Cơ chế:** Thức dậy sau 10 giây thông qua timer wakeup (`esp_sleep_enable_timer_wakeup`) và khởi động lại từ đầu hàm `setup()`[cite: 15, 16].
 
 ---
-
-## 3. Trả lời câu hỏi ôn tập
-1. **Tại sao `delay()` làm sai nhịp?** Vì `delay()` chặn toàn bộ CPU, làm thời gian các tác vụ bị cộng dồn nối tiếp[cite: 11].
-2. **Jitter là gì? Tại sao `esp_timer` cho Jitter thấp?** Jitter là độ lệch giữa thời điểm thực thi thực tế và lý tưởng. `esp_timer` hoạt động dạng ngắt phần cứng độc lập nên không bị ảnh hưởng bởi công việc đang chạy trong `loop()`[cite: 13, 14].
-3. **Phân biệt Light-sleep và Deep-sleep:**
-   * *Light-sleep:* CPU tạm dừng, giữ nguyên RAM thường, tiếp tục chạy ngay tại vị trí dừng.
-   * *Deep-sleep:* Dừng hoàn toàn CPU, mất RAM thường (phải dùng `RTC_DATA_ATTR`), khi thức dậy sẽ khởi động lại từ `setup()`[cite: 15, 16].
