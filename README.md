@@ -1,8 +1,6 @@
 # BÁO CÁO THỰC HÀNH TH2: TIMER PHẦN CỨNG, NON-BLOCKING VÀ DEEP SLEEP
-- **Họ và tên:** [Điền họ tên bạn]
-- **MSSV:** [Điền MSSV bạn]
-- **Tài khoản GitHub:** phinamkhanhfm-cloud
-
+- **Họ và tên:** Phí Nam Khánh
+- **MSSV:** 25119154
 ---
 
 ## 1. Sơ đồ phần cứng
